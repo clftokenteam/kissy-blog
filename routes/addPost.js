@@ -15,7 +15,6 @@ router.get('/', function(req, res) {
  * submit data
  */
 router.post('/', function(req, res) {
-    var id = req.body.id;
     var cid = req.body.cid;
     var title= req.body.title;
     var keywords = req.body.keywords;
@@ -27,7 +26,6 @@ router.post('/', function(req, res) {
     var content = req.body.content;
     var aid = req.body.aid;
     var post = new Post();
-    post.setId(id);
     post.setCid(cid);
     post.setTitle(title);
     post.setKeywords(keywords);

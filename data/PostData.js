@@ -1,5 +1,7 @@
 /**
  * 博文与数据库交互层
+ * author Cheng Liufeng
+ * date 2014/11/8
  * @constructor
  */
 var mongodb = require('./db');
@@ -12,7 +14,6 @@ var PostData = function(post) {
  */
 PostData.prototype.add = function(callback) {
     var post = {
-        id: this._post.getId(),
         cid: this._post.getCid(),
         title: this._post.getTitle(),
         keywords: this._post.getKeywords,
