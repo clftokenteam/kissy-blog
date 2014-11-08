@@ -3,7 +3,6 @@
  * @constructor
  */
 var Category = function() {
-    this._cid = null;                        // 类别Id                Integer
     this._pid = null;                        // 父级Id                Integer     0 代表顶层元素
     this._name = null;                       // 类别名称               String
 };
@@ -52,3 +51,5 @@ Category.prototype.getName = function() {
 Category.prototype.setName = function(name) {
     this._name = name;
 };
+
+module.exports = Category;
