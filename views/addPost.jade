@@ -1,0 +1,40 @@
+extends layout
+
+block content
+    h1=title
+    form(method='post' action='/addPost')
+        p
+            label id
+            input(type='text' name='id')
+        p
+            label cid
+            input(type='text' name='cid')
+        p
+            label title
+            input(type='text' name='title')
+        p
+            label keywords
+            input(type='text' name='keywords')
+        p
+            label description
+            input(type='text' name='description')
+        p
+            label status
+            input(type='text' name='status')
+        p
+            label summary
+            input(type='text' name='summary')
+        p
+            label published
+            input(type='text' name='published')
+        p
+            label updateTime
+            input(type='text' name='updateTime')
+        p
+            label content
+            input(type='text' name='content')
+        p
+            label aid
+            input(type='text' name='aid')
+        p
+            input(type='submit' value='提交')

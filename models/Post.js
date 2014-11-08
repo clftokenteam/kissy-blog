@@ -193,3 +193,4 @@ Post.prototype.getAid = function() {
 Post.prototype.setAid = function(aid) {
     this._aid = aid;
 };
+module.exports = Post;
